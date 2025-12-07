@@ -81,7 +81,7 @@ www IN A 8.8.8.8
 
 ---
 
-## Definitions / Roles (clear, short answers required)
+## Definitions / Roles 
 
 * **What is a server?**
   A server is a machine (physical or virtual) that provides compute, storage, and networking to run software which serves data or functionality to clients.
