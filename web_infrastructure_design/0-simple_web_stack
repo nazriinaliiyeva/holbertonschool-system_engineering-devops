@@ -130,35 +130,4 @@ www IN A 8.8.8.8
 
 ---
 
-## Short mitigation ideas (how this simple setup is commonly improved)
 
-* Move the database to a separate host or managed service (MySQL RDS / Cloud SQL) to reduce resource contention and allow replication/backups.
-* Add a load balancer + multiple application servers behind it to remove single-server limits and provide redundancy.
-* Use a CDN for static assets to reduce bandwidth and increase resilience.
-* Adopt zero-downtime deployments (blue/green, rolling updates, socket handoff) or supervisor workflows to avoid full restarts.
-* Regular backups and monitoring (health checks, alerting) to detect and recover quickly.
-
----
-
-## Example commands (quick operational notes)
-
-* Start Nginx: `sudo systemctl start nginx`
-* Restart app (example Gunicorn): `sudo systemctl restart myapp.service`
-* Check MySQL status: `sudo systemctl status mysql`
-
----
-
-## Repo / file reference
-
-Work this content into the repository path requested:
-`holbertonschool-system_engineering-devops/web_infrastructure_design/0-simple_web_stack` as the assignment file (README or text file) so it's clear, reproducible, and meets the task checklist.
-
----
-
-If you want, I can:
-
-* produce a plain `README.md` file content that you can paste into `0-simple_web_stack` in the repo, or
-* include an ASCII network diagram suitable for printing, or
-* add more details about a particular application server (Gunicorn, uWSGI, Node) with example systemd unit files.
-
-Tell me which of those you'd like next and I will update the doc accordingly.
